@@ -2,91 +2,119 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <h1>
-                <a href="#">PINK</a>
-            </h1> </div>
-        <nav class="main-menu  main-menu--closed  main-menu--nojs">
-            <div class="main-menu__wrapper">
-                <button class="main-menu__toggle" type="button">Открыть меню</button>
-                <ul class="main-menu__items">
-                    <li class="main-menu__item"><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li class="main-menu__item"><a href="photo.html">ФОТОГРАФИИ</a></li>
-                    <li class="main-menu__item"><a>КОНКУРС</a></li>
-                    <li class="main-menu__item"><a href="#">HTMLACADEMY</a></li>
-                </ul>
-            </div>
-        </nav>
-        <h1 class="header-title">Конкурс на самое безбашенное путешествие с Пинк</h1> </header>
-    <main class="form-main">
-        <form class="form-main__user" method="post" action="https://echo.htmlacademy.ru/">
-            <div class="form-main__wrapper">
-                <p class="form-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-                <label for="surname">фамилия:</label>
-                <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required/>
-                <label for="name">имя:</label>
-                <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required/>
-                <label for="second-name">отчество:</label>
-                <input id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже" /> </div>
-            <div class="form-main__wrapper">
-                <h2>ваши безбашенные достижения в путешествии</h2>
-                <input id="shark" type="checkbox" name="journey-progress" value="shark" checked />
-                <label for="shark">Сделал селфи с акулой</label>
-                <input id="beach" type="checkbox" name="journey-progress" value="beach" checked />
-                <label for="beach">Обгорел на пляже</label>
-                <input id="chack-noris" type="checkbox" name="journey-progress" value="chack-noris" />
-                <label for="chack-noris">Видел Чака Нориса</label>
-                <input id="souvenirs" type="checkbox" name="journey-progress" value="souvenirs" />
-                <label for="souvenirs">накупил сувениров</label>
-                <input id="tower" type="checkbox" name="journey-progress" value="tower" checked />
-                <label for="tower">Удержал башню</label>
-                <input id="hotel" type="checkbox" name="journey-progress" value="hotel" />
-                <label for="hotel">Разгромил отель</label>
-            </div>
-            <div class="form-main__wrapper">
-                <label for="phone">номер телефона</label>
-                <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" />
-                <label for="email">адрес почты</label>
-                <input id="email" type="text" name="email" placeholder="Введите почту*" required/> </div>
-            <div class="form-main__wrapper">
-                <input id="ios" type="radio" name="application" value="ios" checked/>
-                <label for="ios">Pink для iOS</label>
-                <input id="android" type="radio" name="application" value="android" />
-                <label for="android">Pink на Android</label>
-                <input id="windows" type="radio" name="application" value="windows" />
-                <label for="windows">Windows Phone</label>
-            </div>
-            <div class="form-main__wrapper">
-                <h2>опишите свои эмоции</h2>
-                <textarea cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-            <button class="form-main__btn" type="submit">отправить форму</button> <span class="form-main__required"><sup>*</sup> - обязательные поля</span> </form>
-        <div class="form-main__request"> <span>Ваша заявка отправлена</span>
-            <p>Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
-            <button type="button">закрыть окно</button>
-        </div>
-        <div class="form-main__popup"> <span>Что-то пошло не так!</span>
-            <p>Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button type="button">OK</button>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__logo">
-            <a href="#"> <img src="img/logo.png" width="147" height="70" alt="logo glasses" /> </a>
-        </div>
-        <ul class="social">
-            <li><a href="#">twitter</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">youtube</a></li>
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__logo">
+      <h1>
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
+      </h1>
+    </div>
+    <nav class="main-menu  main-menu--closed  main-menu--nojs">
+      <div class="main-menu__wrapper">
+        <button class="main-menu__toggle" type="button"></button>
+        <ul class="main-menu__items">
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
+          <li class="main-menu__item"><a class="main-menu__link">КОНКУРС</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">HTMLACADEMY</a></li>
         </ul>
-        <div class="copyright"> <span>Разработано</span> <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlAcademy" /> </div>
-    </footer>
+      </div>
+    </nav>
+  </div>
+  <h1 class="header-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+</header>
+<main class="form-main">
+  <form class="form-main__user" method="post" action="https://echo.htmlacademy.ru/">
+    <div class="form-main__wrapper">
+      <p class="form-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на
+        вашу бонусную карту!</p>
+      <label class="form-main__user-label" for="surname">фамилия:</label>
+      <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required/>
+      <br/>
+      <label class="form-main__user-label" for="name">имя:</label>
+      <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required/>
+      <br/>
+      <label class="form-main__user-label" for="second-name">отчество:</label>
+      <input id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже"/>
+    </div>
+    <div class="form-main__wrapper">
+      <h2 class="form-main__title">ваши безбашенные достижения в путешествии</h2>
+      <input id="shark" type="checkbox" name="journey-progress" value="shark" checked/>
+      <label class="form-main__journey" for="shark">Сделал селфи с акулой</label>
+      <br/>
+      <input id="beach" type="checkbox" name="journey-progress" value="beach" checked/>
+      <label class="form-main__journey" for="beach">Обгорел на пляже</label>
+      <br/>
+      <input id="chack-noris" type="checkbox" name="journey-progress" value="chack-noris"/>
+      <label class="form-main__journey" for="chack-noris">Видел Чака Нориса</label>
+      <br/>
+      <input id="souvenirs" type="checkbox" name="journey-progress" value="souvenirs"/>
+      <label class="form-main__journey" for="souvenirs">накупил сувениров</label>
+      <br/>
+      <input id="tower" type="checkbox" name="journey-progress" value="tower" checked/>
+      <label class="form-main__journey" for="tower">Удержал башню</label>
+      <br/>
+      <input id="hotel" type="checkbox" name="journey-progress" value="hotel"/>
+      <label class="form-main__journey" for="hotel">Разгромил отель</label>
+    </div>
+    <div class="form-main__wrapper">
+      <label class="form-main__user-label" for="phone">номер телефона</label>
+      <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста"/>
+      <br/>
+      <label class="form-main__user-label" for="email">адрес почты</label>
+      <input id="email" type="text" name="email" placeholder="Введите почту*" required/>
+    </div>
+    <div class="form-main__wrapper">
+      <h2 class="form-main__title">с каким приложением путешествовали</h2>
+      <input id="ios" type="radio" name="application" value="ios" checked/>
+      <label for="ios">Pink для iOS</label>
+      <br/>
+      <input id="android" type="radio" name="application" value="android"/>
+      <label for="android">Pink на Android</label>
+      <br/>
+      <input id="windows" type="radio" name="application" value="windows"/>
+      <label for="windows">Windows Phone</label>
+    </div>
+    <div class="form-main__wrapper">
+      <h2 class="form-main__title">опишите свои эмоции</h2>
+      <textarea cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </div>
+    <button  class="form-main__btn btn" type="submit">отправить форму</button>
+    <span class="form-main__required"><sup>*</sup> &#8212; обязательные поля</span>
+  </form>
+  <div class="form-main__request">
+    <span>Ваша заявка отправлена</span>
+    <p>Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
+    <button class="btn" type="button">закрыть окно</button>
+  </div>
+  <div class="form-main__popup">
+    <span>Что-то пошло не так!</span>
+    <p>Проверьте поля выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="btn" type="button">OK</button>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__logo">
+    <a href="#">
+      <img src="img/logo-pink-blue-mobile.svg" width="147" height="70" alt="logo glasses"/>
+    </a>
+  </div>
+  <ul class="social">
+    <li><a class="social__twitter" href="#"></a></li>
+    <li><a class="social__facebook" href="#"></a></li>
+    <li><a class="social__youtube" href="#"></a></li>
+  </ul>
+  <div class="copyright">
+    <span>Разработано</span>
+    <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlAcademy"/>
+  </div>
+</footer>
 </body>
 
 </html>
