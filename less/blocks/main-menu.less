@@ -1,4 +1,9 @@
+.main-menu {
+  position: relative;
+  margin: 0 auto;
+}
 .main-menu__wrapper {
+  width: 100%;
   display: block;
 }
 .main-menu__items {
@@ -8,7 +13,7 @@
 .main-menu__item {
   list-style: none;
   text-align: center;
-  padding: 17px 0 17px 0;
+  padding: 15px 0 15px 0;
   border-top: 1px solid @border-menu-color;
   border-bottom: 1px solid @black-color;
   background-color: @basic-color;
@@ -20,7 +25,9 @@
   text-decoration: none;
 }
 .main-menu__toggle {
-  position: relative;
+  position: absolute;
+  top: -50px;
+  right: 20px;
   width: 50px;
   height: 4px;
   cursor: pointer;
@@ -41,5 +48,18 @@
     width: 50px;
     height: 5px;
     background: @white-color;
+  }
+}
+@media (min-width: 1200px) {
+  .main-menu {
+    flex-grow: 1;
+  }
+  .main-menu__items {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-menu__item {
+    background: none;
+    border: none;
   }
 }

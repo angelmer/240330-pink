@@ -1,12 +1,51 @@
 .header {
+  position: relative;
   color: @white-color;
-  background: url(../img/bg-back-mobile@1x.jpg);
+  background:
+    url(../img/iphone-hand-mobile@1x.png) no-repeat,
+    url(../img/bg-back-mobile@1x.jpg);
+  background-position: 50%  100%, 0 0;
 }
-.header-title {
-  font-weight: 100;
-  font-size: 24px;
+.header__title {
+  margin: 0;
+}
+.header__logo {
+  padding: 20px 20px 20px 0;
+  background: @header-dark;
+}
+.header__wrapper:first-child {
+  margin-bottom: 200px;
+}
+.header__wrapper:last-child {
+  background-color: @basic-color;
 }
 .header__wrapper {
-  background: @header-dark;
-  padding: 0 20px 0 20px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
 }
+@media (min-width: 700px) {
+  .header {
+    background-position: 50%  85%, 0 0;
+  }
+  .header__wrapper {
+    width: 700px;
+  }
+  .header__wrapper:last-child {
+    background: none;
+  }
+  .header__logo {
+    background: @basic-color;
+  }
+}
+@media (min-width: 1200px){
+  .header__wrapper {
+    display: flex;
+    width: 1200px;
+  }
+  .header__wrapper:first-child {
+    background: @header-dark;
+    padding: 0;
+  }
+}
+

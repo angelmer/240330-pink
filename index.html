@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
-
 <body>
 <header class="header">
   <div class="header__wrapper">
     <div class="header__logo">
-      <h1>
+      <h1 class="header__title">
         <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
       </h1>
     </div>
@@ -27,19 +27,25 @@
       </div>
     </nav>
   </div>
+  <div class="header__wrapper">
   <div class="app-download">
     <a href="#" class="btn app-download__btn">Скачать приложение</a>
     <div class="app-download__wrapper">
       <a href="#" class="apple"></a>
       <a href="#" class="android"></a>
       <a href="#" class="windows"></a>
-      <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
+    <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </div>
   </div>
 </header>
 <main class="main">
-  <h2 class="main__title">Устали от серости мегаполиса?</h2>
-  <h2 class="main__title"> Нам есть, что вам предложить!</h2>
+
+  <div class="main__wrapper">
+    <h2 class="main__title">Устали от серости мегаполиса?</h2>
+    <h2 class="main__title"> Нам есть, что вам предложить!</h2>
+  </div>
+  <div class="main__wrapper">
   <section class="features">
     <div class="features__item">
       <h3 class="features__item-title">Поднимает настроение</h3>
@@ -56,6 +62,9 @@
       <p class="features__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
         новых</p>
     </div>
+  </section>
+    </div>
+  <div class="main__wrapper">
     <section class="feedback">
       <article class="feedback__item">
         <span class="feedback__author">Николай Петров</span>
@@ -63,42 +72,55 @@
           серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
       </article>
     </section>
-  </section>
+    </div>
+  <div class="main__wrapper">
   <section class="price">
     <table class="price__items">
-      <tr>
+      <tbody>
+      <tr class="price__row">
         <th class="price__item">
-          <b class="price__title">базовый</b>
+        </th>
+        <th class="price__item">
+          <b class="price__title">база</b>
+          <br/>
           <span class="price__worth">1,99 USD</span>
         </th>
         <th class="price__item">
           <b class="price__title">стандарт</b>
+          <br/>
           <span class="price__worth">3,99 USD</span>
         </th>
         <th class="price__item">
-          <b class="price__title">безлимитный</b>
+          <b class="price__title">анлим</b>
+          <br/>
           <span class="price__worth">9,99 USD</span>
         </th>
       </tr>
-      <tr>
-        <td class="price__grid">розовый фильтр +</td>
-        <td class="price__grid">розовый фильтр +</td>
-        <td class="price__grid">розовый фильтр +</td>
+      <tr class="price__row">
+        <td class="price__grid">Розовый фильтр</td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
       </tr>
-      <tr>
-        <td class="price__grid">смайлики -</td>
-        <td class="price__grid">смайлики +</td>
-        <td class="price__grid">смайлики +</td>
+      <tr class="price__row">
+        <td class="price__grid">Смайлики</td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
       </tr>
-      <tr>
-        <td class="price__grid">коментарии -</td>
-        <td class="price__grid">коментарии -</td>
-        <td class="price__grid">коментарии +</td>
+      <tr class="price__row">
+        <td class="price__grid">Комментарии</td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
+        <td class="price__grid"></td>
       </tr>
+      </tbody>
     </table>
   </section>
+  </div>
 </main>
 <footer class="footer">
+  <div class="footer__wrapper">
   <section class="contacts">
     <p class="contacts__title">Остались вопросы?</p>
     <p class="contacts__title">Свяжитесь с нами!</p>
@@ -115,6 +137,7 @@
       <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
     </div>
   </section>
+  </div>
   <section class="footer__map"></section>
 </footer>
 </body>
