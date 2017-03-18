@@ -1,0 +1,53 @@
+.panorama {
+  width: 320px;
+  margin: 0 auto;
+}
+.panorama__author {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.panorama__about {
+  margin: 0 20px 0 20px;
+  background-color: @content-color;
+}
+.panorama__time {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.panorama__comment {
+  font-size: 14px;
+  line-height: 24px;
+}
+.panorama__like {
+  font-size: 12px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @brand-color;
+}
+.panorama__image {
+  margin: 0;
+  text-align: center;
+}
+.panorama__frame {
+  vertical-align: bottom;
+}
+@media (min-width: 700px) {
+  .panorama {
+    width: 700px;
+  }
+  .panorama__about {
+    margin: 0 40px 0 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .panorama {
+    width: 1200px;
+  }
+  .panorama__about {
+    margin: 0 60px 0 60px;
+  }
+}

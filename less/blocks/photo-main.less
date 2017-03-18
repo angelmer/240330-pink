@@ -1,17 +1,60 @@
+.photo-main__container {
+  width: 320px;
+  margin: 0 auto;
+}
+.photo-main__wrapper {
+  padding: 0 20px 0 20px;
+}
 .photo-main__introduction {
   font-size: 14px;
+  text-align: center;
 }
 .photo-main__send {
+  padding: 10px 90px 10px 90px;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
   color: @brand-color;
   border: 3px solid @marking-color;
+  border-radius: 20px;
 }
 .photo-main__abord {
+  padding: 10px 100px 10px 100px;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
-  color: @brand-color;
+  color: @price-border;
   border: 3px solid @content-color;
+  border-radius: 20px;
 }
+@media (min-width: 700px) {
+  .photo-main__container {
+    width: 700px;
+  }
+  .photo-main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+  }
+  .photo-main__introduction {
+    font-size: 18px;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-main__container {
+    width: 1200px;
+  }
+  .photo-main__introduction {
+    font-size: 18px;
+    width: 575px;
+    margin: 0 auto;
+  }
+  .photo-main__wrapper {
+    padding: 0 60px 0 60px;
+  }
+}
+
+
