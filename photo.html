@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
@@ -11,13 +12,13 @@
 <header class="header">
   <div class="header__wrapper">
     <div class="header__logo">
-      <h1>
+      <h1 class="header__logo-title">
         <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
       </h1>
     </div>
     <nav class="main-menu  main-menu--closed  main-menu--nojs">
+      <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
       <div class="main-menu__wrapper">
-        <button class="main-menu__toggle" type="button"></button>
         <ul class="main-menu__items">
           <li class="main-menu__item"><a class="main-menu__link" href="index.html">ГЛАВНАЯ</a></li>
           <li class="main-menu__item"><a class="main-menu__link">ФОТОГРАФИИ</a></li>
@@ -27,96 +28,111 @@
       </div>
     </nav>
   </div>
-  <h1 class="header-title">Фотографии пользователей</h1></header>
+  <h1 class="header__title">Фотографии<br/> пользователей</h1>
+</header>
 <main class="photo-main">
   <section class="photo-main__items">
     <p class="photo-main__introduction">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
       хватает ваших?</p>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="jump or not"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Анна<span class="photo-item__time">(5 минут назад)</span></span>
-        <p class="photo-item__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+    <article class="panorama">
+      <p class="panorama__image">
+      <img class="panorama__frame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="jump or not"/>
+      </p>
+      <div class="panorama__about">
+        <span class="panorama__author">Анна<span class="photo-item__time">(5 минут назад)</span></span>
+        <p class="panorama__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
-        <a href="#" class="photo-item__like">нравится: 215</a>
+        <a href="#" class="panorama__like">нравится: 215</a>
       </div>
     </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="fly on the moon"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Левон<span class="photo-item__time">(5 часов назад)</span></span>
-        <p class="photo-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <a href="#" class="photo-item__like">нравится: 356</a>
+    <div class="photo-main__container">
+      <div class="photo-main__wrapper">
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="fly on the moon"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Левон<span class="photo-item__time">(5 часов назад)</span></span>
+            <p class="photo-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a href="#" class="photo-item__like">нравится: 356</a>
+          </div>
+        </article>
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="drumm and bass"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Антон<span class="photo-item__time">(12 часов назад)</span></span>
+            <p class="photo-item__comment">Соседи будут рады!</p>
+            <a href="#" class="photo-item__like">нравится: 666</a>
+          </div>
+        </article>
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="your quote"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Борис<span class="photo-item__time">(20 часов назад)</span></span>
+            <p class="photo-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a href="#" class="photo-item__like">нравится: 215</a>
+          </div>
+        </article>
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Cuban"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Сергей<span class="photo-item__time">(25 часов назад)</span></span>
+            <p class="photo-item__comment">Самая кубанская в мире!</p>
+            <a href="#" class="photo-item__like">нравится: 4</a>
+          </div>
+        </article>
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="where is the snow"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Максим<span class="photo-item__time">(40 часов назад)</span></span>
+            <p class="photo-item__comment">Где снег-то?</p>
+            <a href="#" class="photo-item__like">нравится: 150</a>
+          </div>
+        </article>
+        <article class="photo-item">
+          <img class="photo-item__frame" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="plane"/>
+          <div class="photo-item__about">
+            <span class="photo-item__author">Надежда<span class="photo-item__time">(45 часов назад)</span></span>
+            <p class="photo-item__comment">Всем GM и взаимные лайки!</p>
+            <a href="#" class="photo-item__like">нравится: 2560</a>
+          </div>
+        </article>
+        </div>
       </div>
-    </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="drumm and bass"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Антон<span class="photo-item__time">(12 часов назад)</span></span>
-        <p class="photo-item__comment">Соседи будут рады!</p>
-        <a href="#" class="photo-item__like">нравится: 666</a>
-      </div>
-    </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="your quote"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Борис<span class="photo-item__time">(20 часов назад)</span></span>
-        <p class="photo-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <a href="#" class="photo-item__like">нравится: 215</a>
-      </div>
-    </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Cuban"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Сергей<span class="photo-item__time">(25 часов назад)</span></span>
-        <p class="photo-item__comment">Самая кубанская в мире!</p>
-        <a href="#" class="photo-item__like">нравится: 4</a>
-      </div>
-    </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="where is the snow"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Максим<span class="photo-item__time">(40 часов назад)</span></span>
-        <p class="photo-item__comment">Где снег-то?</p>
-        <a href="#" class="photo-item__like">нравится: 150</a>
-      </div>
-    </article>
-    <article class="photo-item">
-      <img class="photo-item__frame" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="plane"/>
-      <div class="photo-item__about">
-        <span class="photo-item__author">Надежда<span class="photo-item__time">(45 часов назад)</span></span>
-        <p class="photo-item__comment">Всем GM и взаимные лайки!</p>
-        <a href="#" class="photo-item__like">нравится: 2560</a>
-      </div>
-    </article>
   </section>
+  <div class="main__container">
   <section class="download">
     <p class="download__introduction">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     <img class="download__photo" src="img/photo-7-mobile@1x.jpg" width="280" height="384" alt="road"/>
     <div class="download__photo-crop">
+      <div class="download__wrapper">
       <a href="#" class="download__crop"></a>
       <a href="#" class="download__fill"></a>
       <a href="#" class="download__brightness"></a>
+      </div>
       <input class="download__photo-size" type="range"/>
     </div>
   </section>
-  <button class="photo-main__send btn" type="submit">Запостить</button>
-  <button class="photo-main__abord btn" type="button">Отмена</button>
+    </div>
+  <div class="main__container">
+    <button class="photo-main__send btn" type="submit">Запостить</button>
+    <button class="photo-main__abord btn" type="button">Отмена</button>
+  </div>
 </main>
 <footer class="footer">
-  <div class="footer__logo">
-    <a href="#">
-      <img src="img/logo-pink-blue-mobile.svg" width="147" height="70" alt="logo glasses"/>
-    </a>
-  </div>
-  <ul class="social">
-    <li><a class="social__twitter" href="#"></a></li>
-    <li><a class="social__facebook" href="#"></a></li>
-    <li><a class="social__youtube" href="#"></a></li>
-  </ul>
-  <div class="copyright">
-    <span>Разработано</span>
-    <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlAcademy"/>
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="70" alt="logo glasses"/>
+      </a>
+    </div>
+    <ul class="social">
+      <li><a class="social__twitter" href="#"></a></li>
+      <li><a class="social__facebook" href="#"></a></li>
+      <li><a class="social__youtube" href="#"></a></li>
+    </ul>
+    <div class="copyright">
+      <span>Разработано</span>
+      <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlAcademy"/>
+    </div>
   </div>
 </footer>
 </body>
