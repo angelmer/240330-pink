@@ -1,4 +1,10 @@
+.main {
+  overflow: hidden;
+}
 .main__title {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 27px;
   font-weight: 100;
   font-size: 24px;
   text-align: center;
@@ -8,15 +14,50 @@
   padding: 0 20px 0 20px;
   margin: 0 auto;
 }
-@media (min-width: 320px) {
-  .main {
-    overflow: hidden;
-  }
-  .main__container:nth-child(4) {
-    width: 960px;
-  }
+.main__wrapper:first-child {
+  padding-top: 10px;
+}
+.main__wrapper:nth-child(2) {
+  background: @content-color;
+}
+.main__wrapper:nth-child(5) {
+  background: @content-color;
+}
+.main__wrapper:nth-child(5) {
+  display: flex;
+}
+.main__insert {
+  width: 300px;
+  margin-top: 98px;
+  margin-right: 10px;
+  margin-left: auto;
+  padding-bottom: 60px;
+}
+.main__insert-title {
+  width: 168px;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.main__insert-content {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main__insert-link {
+  font-size: 14px;
+  color: @insert-link;
 }
 @media (min-width: 700px) {
+  .main {
+    padding-top: 25px;
+  }
+  .main__wrapper:first-child {
+    padding-bottom: 43px;
+  }
   .main__container {
     width: 700px;
     padding: 0 40px 0 40px;
@@ -24,8 +65,20 @@
   .main__container:nth-child(4) {
     width: 700px;
   }
+  .main__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 0;
+  }
+  .main__title:nth-child(2) {
+    margin: 0 auto;
+    width: 350px;
+  }
 }
 @media (min-width: 1200px) {
+  .main {
+    padding-top: 40px;
+  }
   .main__container {
     width: 1200px;
     padding: 0 60px 0 60px;
@@ -33,13 +86,34 @@
   .main__container:nth-child(4) {
     width: 1200px;
   }
-}
-.main__wrapper:first-child {
-  padding-top: 10px;
-}
-.main__wrapper:nth-child(2) {
-  background: @content-color;
-}
-.main__wrapper:nth-child(4) {
-  background: @content-color;
+  .main__wrapper:first-child {
+    padding-bottom: 0;
+  }
+  .main__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .main__title:nth-child(2) {
+    margin-bottom: 80px;
+    width: 450px
+  }
+  .main__insert {
+    background: @content-color;
+    width: 530px;
+    margin-top: 110px;
+    margin-right: 112px;
+  }
+  .main__insert-title {
+    width: 100%;
+  }
+  .main__insert-content {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .main__insert-link {
+    font-size: 18px;
+    display: block;
+    margin-top: 31px;
+  }
 }

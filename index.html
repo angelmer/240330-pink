@@ -12,22 +12,24 @@
   <div class="header__wrapper">
     <div class="header__logo">
       <h1 class="header__logo-title">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
+        <img class="header__mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
+        <img class="header__tablet" src="img/logo-pink-blue-mobile.svg" width="146.3" height="40.375" alt="logo"/>
       </h1>
     </div>
     <nav class="main-menu  main-menu--closed  main-menu--nojs">
       <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
       <div class="main-menu__wrapper">
         <ul class="main-menu__items">
-          <li class="main-menu__item"><a class="main-menu__link">ГЛАВНАЯ</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="form.html">КОНКУРС</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">HTMLACADEMY</a></li>
+          <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">HTMLAcademy</a></li>
         </ul>
       </div>
     </nav>
   </div>
   <div class="header__wrapper">
+    <p class="header__offer">Взгляните на жизнь иначе!</p>
     <div class="app-download">
       <a href="#" class="btn app-download__btn">Скачать приложение</a>
       <div class="app-download__wrapper">
@@ -56,25 +58,41 @@
         </div>
         <div class="features__item">
           <h3 class="features__item-title">Меняет мир вокруг</h3>
-          <p class="features__item-content">Сделайте снимок и украсте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
+          <p class="features__item-content">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект</p>
         </div>
         <div class="features__item">
           <h3 class="features__item-title">Заводит новых друзей</h3>
           <p class="features__item-content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
-          </div>
+        </div>
       </section>
     </div>
     </div>
   <div class="main__wrapper">
     <div class="main__container">
+      <div class="main__insert">
+        <p class="main__insert-title">Эффект на 24 часа!</p>
+        <p class="main__insert-content">Британские ученые провели исследования и доказали, что положительный
+          эффект от использования приложения длится целые сутки!</p>
+        <a class="main__insert-link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
+  </div>
+  <div class="main__wrapper">
+    <div class="main__container">
       <section class="feedback">
         <article class="feedback__item">
           <span class="feedback__author">Николай Петров</span>
-          <p class="feedback__content">Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные
-            серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          <span class="feedback__work">25 лет, водитель трамвая</span>
+          <p class="feedback__content"><span>&#171;</span>Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные
+            серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&#187;</span></p>
         </article>
+        <div class="feedback__wrapper">
+          <span class="feedback__toggle"></span>
+          <span class="feedback__toggle"></span>
+          <span class="feedback__toggle"></span>
+        </div>
       </section>
       </div>
     </div>
@@ -104,48 +122,71 @@
           </tr>
           <tr class="price__row">
             <td class="price__grid">Розовый фильтр</td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
+            <td class="price__grid"><span class="price__name">Розовый фильтр</span></td>
+            <td class="price__grid"><span class="price__name">Розовый фильтр</span></td>
+            <td class="price__grid"><span class="price__name">Розовый фильтр</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__grid">Смайлики</td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
+            <td class="price__grid"><span class="price__name">Смайлики</span></td>
+            <td class="price__grid"><span class="price__name">Смайлики</span></td>
+            <td class="price__grid"><span class="price__name">Смайлики</span></td>
           </tr>
           <tr class="price__row">
             <td class="price__grid">Комментарии</td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
-            <td class="price__grid"></td>
+            <td class="price__grid"><span class="price__name">Комментарии</span></td>
+            <td class="price__grid"><span class="price__name">Комментарии</span></td>
+            <td class="price__grid"><span class="price__name">Комментарии</span></td>
           </tr>
           </tbody>
         </table>
+        <div class="price__wrapper">
+          <span class="price__toggle"></span>
+          <span class="price__toggle"></span>
+          <span class="price__toggle"></span>
+        </div>
       </section>
     </div>
   </div>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
-  <section class="contacts">
-    <p class="contacts__title">Остались вопросы?</p>
-    <p class="contacts__title">Свяжитесь с нами!</p>
-    <div class="contacts__phone">
-      <p class="contacts__name">Звоните:</p>
-      <a class="contacts__link" href="#">+7(812) 555-66-66</a>
-    </div>
-    <div class="contacts__email">
-      <p class="contacts__name">Пишите:</p>
-      <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </div>
-    <div class="contacts__adress">
-      <p class="contacts__name">Приезжайте в гости:</p>
-      <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
-    </div>
-  </section>
+    <section class="contacts">
+      <p class="contacts__title">Остались вопросы?</p>
+      <p class="contacts__title">Свяжитесь с нами!</p>
+      <div class="contacts__wrapper">
+        <div class="contacts__phone">
+          <p class="contacts__name">Звоните:</p>
+          <a class="contacts__link" href="#">+7(812) 555-66-66</a>
+        </div>
+        <div class="contacts__email">
+          <p class="contacts__name">Пишите:</p>
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__adress">
+          <p class="contacts__name">Приезжайте в гости:</p>
+          <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+        </div>
+      </div>
+    </section>
   </div>
   <section class="footer__map"></section>
+  <div class="footer__container">
+    <div class="footer__logo">
+      <a href="#">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="70" alt="logo glasses"/>
+      </a>
+    </div>
+    <ul class="social">
+      <li><a class="social__twitter" href="#"></a></li>
+      <li><a class="social__facebook" href="#"></a></li>
+      <li><a class="social__youtube" href="#"></a></li>
+    </ul>
+    <div class="copyright">
+      <span>Разработано</span>
+      <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlAcademy"/>
+    </div>
+  </div>
 </footer>
 </body>
 

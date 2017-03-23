@@ -1,7 +1,9 @@
 .photo-item {
+  margin-top: 20px;
   width: 280px;
 }
 .photo-item__about {
+  padding: 12px 0 20px 17px;
   background-color: @content-color;
 }
 .photo-item__author {
@@ -10,16 +12,20 @@
   line-height: 24px;
 }
 .photo-item__time {
+  margin-left: 5px;
   font-weight: 100;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
 }
 .photo-item__comment {
+  margin: 0;
+  margin-bottom: 3px;
   font-size: 14px;
   line-height: 24px;
 }
 .photo-item__like {
+  margin-left: 32px;
   font-size: 12px;
   line-height: 24px;
   text-decoration: none;
@@ -29,4 +35,50 @@
 .photo-item__frame {
   vertical-align: bottom;
 }
+.photo-item:nth-child(3) {
+  margin-top: 22px;
+}
+.photo-item:nth-child(5) {
+  margin-top: 24px;
+}
+@media (min-width: 700px) {
+  .photo-item {
+    width: 300px;
+    height: 455px;
+  }
+  .photo-item__about {
+    position: relative;
+    padding: 20px 26px 0 27px;
+    height: 155px;
+  }
+  .photo-item__like {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+  }
+  .photo-item__frame {
+    height: 300px;
+    width: 300px;
+  }
+  .photo-item:nth-child(3) {
+    margin-top: 20px;
+  }
+  .photo-item:nth-child(5) {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-item:nth-child(3) {
+    margin-top: 0;
+  }
+  .photo-item:nth-child(5) {
+    margin-top: 0;
+  }
+  .photo-item {
+    margin: 0;
+  }
+  .photo-item__frame {
+    height: 400px;
+  }
 
+}

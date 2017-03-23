@@ -3,23 +3,42 @@
   margin: 0 auto;
   padding: 0 20px 0 20px;
 }
-@media (min-width: 700px) {
-  .footer__container {
-    display: flex;
-    width: 700px;
-    padding: 0 40px 0 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .footer__wrapper {
-    width: 1200px;
-    padding: 0 60px 0 60px;
-  }
-}
 .footer {
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .footer__map {
   height: 421px;
   background: url(../img/bg-map-mobile@1x.png);
 }
+@media (min-width: 700px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding: 0 40px 0 40px;
+  }
+  .footer__map {
+    height: 400px;
+  }
+  .footer__logo {
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-bottom: 70px;
+  }
+  .footer__container {
+    width: 1200px;
+    padding: 36px 60px 0 60px;
+  }
+  .footer__map {
+    height: 500px;
+  }
+  .footer__logo {
+    margin-left: 70px;
+  }
+}
+

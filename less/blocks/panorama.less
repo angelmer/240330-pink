@@ -9,7 +9,14 @@
 }
 .panorama__about {
   margin: 0 20px 0 20px;
+  padding: 12px 0 20px 17px;
   background-color: @content-color;
+}
+.panorama-item__time {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 .panorama__time {
   font-weight: 100;
@@ -18,10 +25,13 @@
   text-transform: uppercase;
 }
 .panorama__comment {
+  margin: 0;
+  margin-bottom: 3px;
   font-size: 14px;
   line-height: 24px;
 }
 .panorama__like {
+  margin-left: 32px;
   font-size: 12px;
   line-height: 24px;
   text-decoration: none;
@@ -37,17 +47,41 @@
 }
 @media (min-width: 700px) {
   .panorama {
+    padding-top: 75px;
+    padding-bottom: 30px;
     width: 700px;
   }
   .panorama__about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
     margin: 0 40px 0 40px;
+  }
+  .panorama__frame {
+    width: 700px;
+    height: 509px;
+  }
+  .panorama__author {
+    margin-left: 10px;
+  }
+  .panorama__comment {
+    order: 1;
+    margin-left: 10px;
+  }
+  .panorama__like {
+    margin-left: 305px;
   }
 }
 @media (min-width: 1200px) {
   .panorama {
+    padding-top: 88px;
     width: 1200px;
   }
   .panorama__about {
-    margin: 0 60px 0 60px;
+    margin: 0 130px 0 130px;
+  }
+  .panorama__frame {
+    width: 1200px;
+    height: 506px;
   }
 }

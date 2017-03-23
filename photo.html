@@ -13,17 +13,18 @@
   <div class="header__wrapper">
     <div class="header__logo">
       <h1 class="header__logo-title">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
+        <img class="header__mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logo"/>
+        <img class="header__tablet" src="img/logo-pink-blue-mobile.svg" width="146.3" height="40.375" alt="logo"/>
       </h1>
     </div>
     <nav class="main-menu  main-menu--closed  main-menu--nojs">
       <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
       <div class="main-menu__wrapper">
         <ul class="main-menu__items">
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">ГЛАВНАЯ</a></li>
-          <li class="main-menu__item"><a class="main-menu__link">ФОТОГРАФИИ</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="form.html">КОНКУРС</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">HTMLACADEMY</a></li>
+          <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">HTMLAcademy</a></li>
         </ul>
       </div>
     </nav>
@@ -39,8 +40,8 @@
       <img class="panorama__frame" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="jump or not"/>
       </p>
       <div class="panorama__about">
-        <span class="panorama__author">Анна<span class="photo-item__time">(5 минут назад)</span></span>
-        <p class="panorama__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+        <span class="panorama__author">Анна<span class="panorama-item__time">(5 минут назад)</span></span>
+        <p class="panorama__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
         <a href="#" class="panorama__like">нравится: 215</a>
       </div>
@@ -98,24 +99,31 @@
         </div>
       </div>
   </section>
-  <div class="main__container">
   <section class="download">
-    <p class="download__introduction">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-    <img class="download__photo" src="img/photo-7-mobile@1x.jpg" width="280" height="384" alt="road"/>
-    <div class="download__photo-crop">
-      <div class="download__wrapper">
-      <a href="#" class="download__crop"></a>
-      <a href="#" class="download__fill"></a>
-      <a href="#" class="download__brightness"></a>
+    <div class="photo-main__container">
+    <p class="download__introduction">Затмите их всех!</p>
+    <p class="download__introduction">Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+    <div class="download__wrapper">
+      <div class="download__container">
+        <img class="download__photo" src="img/photo-7-mobile@1x.jpg" width="280" height="384" alt="road"/>
+        <div class="download__insert">
+          <div class="download__tools">
+          <a href="#" class="download__crop"></a>
+          <a href="#" class="download__fill"></a>
+          <a href="#" class="download__brightness"></a>
+          </div>
+          <div class="download__ranges">
+          <div class="download__range"></div>
+          <div class="download__range"></div>
+          <div class="download__range"></div>
+          </div>
+          <button class="download__send btn" type="submit">Запостить</button>
+          <button class="download__abord btn" type="button">Отмена</button>
+        </div>
       </div>
-      <input class="download__photo-size" type="range"/>
     </div>
   </section>
-    </div>
-  <div class="main__container">
-    <button class="photo-main__send btn" type="submit">Запостить</button>
-    <button class="photo-main__abord btn" type="button">Отмена</button>
-  </div>
 </main>
 <footer class="footer">
   <div class="footer__container">
